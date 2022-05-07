@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background-color: #6d1369;
+}
+
+.app {
+  max-width: 1440px;
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  padding: 5px;
+}
+
+.app div {
+  padding: 5px;
+  background-color: #886b82;
+}
+
+.app .title {
+  font-size: 30px;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.app .tools {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .tools input {
+  width: 80%;
+  line-height: 150%;
+  font-size: 20px;
+  border-radius: 5px;
+  text-indent: 10px;
+  border: none;
+}
+
+.app .tools input:focus {
+  outline: none;
+}
+
+.app .tools button {
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.app .tools button:hover {
+  background-color: grey;
+}
+
+.app .list {
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px;
+}
+
+.app .list div {
+  background-color: #a27299;
+  position: relative;
+}
+
+.app .list div button {
+  opacity: 0;
+  max-height: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  right: 5px;
+  bottom: 5px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: plum;
+  border: none;
+  border-radius: 5px;
+}
+
+.app .list div button:hover {
+  background-color: #f1daf1;
+}
+
+.app .list div:hover button {
+  opacity: 1;
+}
+
+.app .list div:hover div.text input {
+  opacity: 1;
+}
+
+.app .list div:hover div.text span {
+  overflow: visible;
+  white-space: normal;
+  line-height: 120%;
+  max-height: 9999px;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.app .list div div.text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.app .list div div.text input {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  accent-color: rebeccapurple;
+}
+
+.app .list div div.text span {
+  max-height: 20px;
+  padding: 0px 20px;
+  text-align: left;
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 80%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #dc6adc;
+}
+/*# sourceMappingURL=index.css.map */
